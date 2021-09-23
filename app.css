@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 #nav-head{
     position: fixed;
@@ -19,7 +22,8 @@
     transition: 0.6s;
     /* padding: 27px 100px; */
     z-index: 100000;
-    background-color: #4a4897 !important;
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
 }
 
 
@@ -29,6 +33,15 @@
     -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
   box-shadow: 0 4px 6px -6px #222;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    /* position: relative; */
+    display: block;
+    /* margin-right: auto; */
+    margin-left: auto;
 }
 
 #nav-head .logo{
@@ -47,7 +60,7 @@
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     letter-spacing: 2px;
     font-weight: 600;
     list-style: none;
@@ -153,14 +166,16 @@ h2.text-center {
 }
 
 h2.h2-header {
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
-    padding: 15px 0 0 0;
+    padding: 25px 0 0 0;
+    font-size: 1.7em;
 }
 
 h3.h3-header {
     text-align: center;
     /* padding: 0 50px; */
+    font-size: 1.5em;
 }
 
 /* button.btn.btn-danger {
@@ -172,7 +187,7 @@ h3.h3-header {
 } */
 
 .contest-para {
-    text-align: center;
+    text-align: justify;
     padding: 20px;
 }
 
@@ -274,7 +289,7 @@ img.banner-img {
 
 img.community-img {
     width: 100%;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
 }
 
 
@@ -312,6 +327,88 @@ img.footer-logo {
     border-color: #f36a00 !important;
 }
 
+ul.footer-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #E8E8E8;
+}
+
+img.footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 20px 0
+}
+
+li.footer-icon {
+    display: inline-block;
+    padding: 0 8px 0 0;
+}
+
+img.icon-size {
+    width: 50px;
+    /* margin-left: auto; */
+}
+
+ul.footer-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+p.copy {
+    text-align: center;
+    padding: 20px 0;
+    color: grey;
+}
+
+
+
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+
+a.nav-link.active {
+    color: #f36a00 ;
+    font-weight: 500;
+    border-bottom: 4px solid #f36a00 ;
+}
+
+
 /* media *********************************************************** */
  @media screen and (min-width: 480px) {
     #nav-head{
@@ -323,21 +420,25 @@ img.footer-logo {
         justify-content: space-between;
         align-items: center;
         transition: 0.6s;
-        padding: 27px 100px;
+        padding: 20px 100px;
         z-index: 100000;
-        background-color: #4a4897 !important;
+        background-color: #fff !important;
+        -webkit-box-shadow: 0 4px 6px -6px #222;
     }
     
     
     #nav-head.sticky{
-        padding: 5px 100px;
+        /* padding: 5px 100px; */
         background:#fff !important;
         -webkit-box-shadow: 0 4px 6px -6px #222;
-      -moz-box-shadow: 0 4px 6px -6px #222;
-      box-shadow: 0 4px 6px -6px #222;
+        -moz-box-shadow: 0 4px 6px -6px #222;
+        box-shadow: 0 4px 6px -6px #222;
+        
     }
     
-    #nav-head .logo{
+
+
+    #nav-head.logo{
         position: relative;
         transition: 0.6s;
     }
@@ -353,7 +454,7 @@ img.footer-logo {
         position: relative;
         margin: 0 15px;
         text-decoration: none;
-        color: #fff;
+        color: #000;
         letter-spacing: 2px;
         font-weight: 600;
         list-style: none;
@@ -520,11 +621,13 @@ img.footer-logo {
         font-weight: 700;
         text-align: left;
         padding: 0 50px;
+        font-size: 2em;
     }
 
     h3.h3-header {
         text-align: left;
         padding: 0 50px;
+        font-size: 1.7em;
     }
 
     /* sec 2 */
@@ -589,5 +692,49 @@ img.footer-logo {
         color: #fff;
         background-color: #f36a00 !important;
         border-color: #f36a00 !important;
+    }
+
+    ul.footer-icons-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        background-color: #E8E8E8;
+    }
+
+    img.footer-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        padding: 30px 0 30px 0;
+    }
+
+    li.footer-icon {
+        display: inline-block;
+        padding: 0 8px 0 0;
+    }
+
+    img.icon-size {
+        width: 60px;
+        /* margin-left: auto; */
+    }
+
+    ul.footer-icons-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    p.copy {
+        text-align: center;
+        padding: 20px 0;
+        color: grey;
+    }
+
+    a.nav-link.active {
+        color: #f36a00 ;
+        font-weight: 500;
+        border-bottom: 4px solid #f36a00 ;
     }
   }
