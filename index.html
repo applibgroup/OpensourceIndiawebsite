@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>OSI</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- <nav>
         <input type="checkbox" id="check">
         <label for="logo" class="logo"><img src="./img/Logo.png" alt="" width="80%"></label>
@@ -29,29 +29,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+          <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contest</a>
+              <a class="nav-link" href="#contest">Contest</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Community</a>
+                <a class="nav-link" href="#community">About Community</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <!-- <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> -->
+        
         </div>
     </nav>
 
       <!--  second section ********************************************** -->
-      <div class="container">
+      <div class="container" id="home">
         <section class="banner">
           <img src="./img/vision-mission.jpg" alt="" width="100%" class="banner-image">
         </section>
@@ -70,7 +67,7 @@
       <!-- Our mission and vison starts here ******************************************************************* -->
       <!-- contest section starts here ****************************************************************** -->
 
-      <div class="container sec-1">
+      <div class="container sec-1" id="contest">
           <div class="row">
               <div class="col-sm-6">
                 <h2 class="h2-header">HarmonyOS Library</h2>
@@ -82,7 +79,7 @@
                 <button class="btn btn-danger">Contact Us</button>   
               </div>
               <div class="col-sm-6">
-                 <img src="./img/Library-contest.png" alt=""  class="banner-img">
+                 <img src="./img/Library-contest.png" alt=""  class="banner-img slideanim">
               </div>
           </div>
       </div>
@@ -91,10 +88,10 @@
 
       <!-- comunity ************************************************************************************************** -->
 
-      <div class="container sec-2">
+      <div class="container sec-2" id="community">
         <div class="row">
             <div class="col-sm-6">
-              <img src="./img/Community.png" alt=""  class="community-img">
+              <img src="./img/Community.png" alt=""  class="community-img slideanim">
             </div>
             <div class="col-sm-6">
               <h2 class="h2-header">About Our Community</h2>
@@ -122,14 +119,14 @@
               <button class="btn btn-danger">READ MORE</button>   
             </div>
             <div class="col-sm-6">
-              <iframe class="youtube-video" src="https://www.youtube.com/embed/zx-45PxtU-Y?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="youtube-video slideanim" src="https://www.youtube.com/embed/zx-45PxtU-Y?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </iframe>
             </div>
         </div>
       </div>
 
-<!-- 
-      <div class="container" style="margin-top: 50px;">
+      <!-- 
+        <div class="container" style="margin-top: 50px;">
           <div class="row">
               <div class="col-sm-5">
                 <h2 class="h2-header">One As All, All As One</h2>
@@ -146,14 +143,14 @@
           </div>
       </div> -->
 
-      <div class="container sec-contact">
+      <div class="container sec-contact" id="contact">
         <div class="row">
            <div class="col-sm-6">
              <h2 class="h2-header">Contact Us</h2>
              <div class="contest-para">
               <p>Feel free to contact us anytime.we will get back to you soon as we can!</p>
              </div>
-             <img src="./img/contact-us.png" alt="" class="contact-us">
+             <img src="./img/contact-us.png" alt="" class="contact-us slideanim">
            </div>
            <div class="col-md-6 p-0  h-md-100 contactusArea">
             <div class="d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
@@ -194,29 +191,50 @@
         </div>
       </div>
 
-      <div class="container footer-container">
-        <div class="row">
-          <div class="footer">
-            <img src="./img/Logo.png" alt="" class="footer-logo">
-            <div class="footer-fab">
-              <!-- <i class="fab fa-github"></i>
-              <i class="fab fa-meetup"></i> -->
-            </div>
-            <!-- <ul class="footer-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Contest</a></li>
-              <li><a href="#">About Community</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul> -->
-          </div>
+      <div class="footer">
+        <div class="footer-image">
+          <img src="./img/Logo.png" alt="footer-logo" class="footer-logo" >
         </div>
-      </div>
+        <div class="list-social-icon">
+         <ul class="footer-icons-list">
+             <li class="footer-icon"><a href="https://github.com/applibgroup" target="_blank"><img src="./img/github_icon.png" alt="" class="icon-size"></a></li>
+             <li class="footer-icon"><a href="https://www.meetup.com/application-library-engineering-group/" target="_blank"><img src="./img/meetup.png" alt="" class="icon-size"></a></li>
+             <li class="footer-icon"><a href="https://www.medium.com/@applibgroup" target="_blank"><img src="./img/medium.png" alt="" class="icon-size"></a></li>
+         </ul>
+        </div>
+        <div class="copyright">
+         <p class="copy">&copy; 2021 Application Library Engineering Group</p>
+        </div>
+     </div>
 
       <script>
         window.addEventListener('scroll', function(){
             let header = document.getElementById("nav-head");
             header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+          });
+        });
+
+
+        window.onload = function(){
+        $('.navbar-nav .nav-link').removeClass('active');
+        $('.navbar-brand').click(function(){
+          $('.navbar-nav .nav-link').removeClass('active');
         })
+      }
+       $('.navbar-nav .nav-link').click(function(){
+        $('.navbar-nav .nav-link').removeClass('active');
+        $(this).addClass('active');
+       })
     </script>
 </body>
 </html>
