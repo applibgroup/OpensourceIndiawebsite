@@ -213,7 +213,7 @@ img.banner-img {
 
 /* social media ***************** */
 
-.social{
+/* .social{
     position: fixed;
     top: 5%;
     left: 0%;
@@ -277,7 +277,7 @@ img.banner-img {
 
 .social a:nth-child(6) i{
     color: #0a66c2;
-}
+} */
 
 
 
@@ -335,6 +335,8 @@ ul.footer-icons-list {
 
 .footer {
     background-color: #E8E8E8;
+    display: grid;
+    place-items: center;
 }
 
 img.footer-logo {
@@ -409,6 +411,109 @@ a.nav-link.active {
     border-bottom: 4px solid #f36a00 ;
 }
 
+
+.wrapper .button{
+    /* display: inline-block; */
+    /* height: 60px;
+    width: 60px;
+    float: left;  
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out; */
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    /* margin: 0 5px; */
+}
+
+.wrapper .button:hover{
+    transform: translate(20px, 0);
+    width: 200px;
+}
+
+.wrapper .button .icon{
+    display: inline-block;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    /* background: #1DA0F0; */
+    color: transparent;
+    background: #1DA0F0;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+.wrapper .button:nth-child(2):hover .icon{
+    
+    color: transparent;
+    background: #0a66c2;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+.wrapper .button:nth-child(3):hover .icon{
+
+    color: transparent;
+    background: #5865f2;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+.wrapper .button:nth-child(4):hover .icon{
+    color: transparent;
+    background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+.wrapper .button:nth-child(5):hover .icon{
+
+    color: transparent;
+    background: #4ecce8;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    
+}
+
+.wrapper .button:nth-child(6):hover .icon{
+   
+    color: transparent;
+    background: #F80000;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+a {
+    color: black;
+}
 
 /* media *********************************************************** */
  @media screen and (min-width: 480px) {
@@ -533,71 +638,6 @@ a.nav-link.active {
 
     
 
-    .social{
-        position: fixed;
-        top: 5%;
-        left: 0%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transform: translate(-260px, 0);
-    }
-    
-    .social a{
-        color: #fff;
-        background: rgba(0, 0, 0, 0.4);
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none !important;
-        display: block;
-        margin: 5px;
-        padding: 10px;
-        width: 300px;
-        text-align: right;
-        border-radius: 50px;
-        transition: 1s;
-        transition-property: transform;
-    }
-    
-    .social a:hover{
-        transform: translate(140px, 0);
-        color: #fff;
-    }
-    
-    .social i{
-        margin-left: 10px;
-        font-size: 30px;
-        width: 30px;
-        height: 30px;
-    }
-    
-    .social a:nth-child(1) i{
-        color: #1DA0F0;
-    }
-    
-    .social a:nth-child(2) i{
-        color: #F80000;
-    }
-    
-    .social a:nth-child(3) i{
-        color: #4ecce8;
-    }
-    
-    .social a:nth-child(4) i{
-        color: transparent;
-        background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
-        -webkit-background-clip: text;
-        font-weight: 600;
-    }
-    
-    .social a:nth-child(5) i{
-        color: #5865f2;
-    }
-    
-    .social a:nth-child(6) i{
-        color: #0a66c2;
-    }
 
     .container.sec-1 {
         background-color: #E8E8E8;
@@ -677,9 +717,9 @@ a.nav-link.active {
         width: 250px !important;
     }
     .footer {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: #E8E8E8;
+        display: grid;
+        place-items: center;
     }
 
 
@@ -738,4 +778,104 @@ a.nav-link.active {
         font-weight: 500;
         border-bottom: 4px solid #f36a00 ;
     }
+
+    
+    .wrapper .button{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        float: left;
+        margin: 0 5px;
+        overflow: hidden;
+        border-radius: 50px;
+        background: #fff;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+        
+        
+    }
+
+    .wrapper .button:hover{
+        transform: translate(5px, 0);
+        width: 200px;
+    }
+
+    .wrapper .button .icon{
+        display: inline-block;
+        text-align: center;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        line-height: 60px;
+    }
+
+    .wrapper .button:nth-child(1):hover .icon a{
+        /* background: #1DA0F0; */
+        color: transparent;
+        background: #1DA0F0;
+        -webkit-background-clip: text;
+        font-weight: 600;
+    }
+
+    .wrapper .button:nth-child(2):hover .icon a{
+        
+        color: transparent;
+        background: #0a66c2;
+        -webkit-background-clip: text;
+        font-weight: 600;
+    }
+
+    .wrapper .button:nth-child(3):hover .icon a{
+    
+        color: transparent;
+        background: #5865f2;
+        -webkit-background-clip: text;
+        font-weight: 600;
+    }
+
+    .wrapper .button:nth-child(4):hover .icon a{
+        color: transparent;
+        background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
+        -webkit-background-clip: text;
+        font-weight: 600;
+    }
+
+    .wrapper .button:nth-child(5):hover .icon a{
+    
+        color: transparent;
+        background: #4ecce8;
+        -webkit-background-clip: text;
+        font-weight: 600;
+        
+    }
+
+    .wrapper .button:nth-child(6):hover .icon a{
+       
+        color: transparent;
+        background: #F80000;
+        -webkit-background-clip: text;
+        font-weight: 600;
+    }
+
+
+    .wrapper .button .icon i{
+        font-size: 25px;
+        line-height: 60px;
+    }
+
+    .wrapper .button span{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+
+    a {
+        color: black;
+    }
   }
+
+
+  
