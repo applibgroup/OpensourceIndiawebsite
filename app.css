@@ -9,7 +9,7 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 96px;
+    scroll-padding-top: 60px;
 }
 
 #nav-head{
@@ -511,8 +511,52 @@ a.nav-link.active {
     margin-left: 10px;
 }
 
-a {
-    color: black;
+
+.sec-video{
+    position: relative;
+    height: 680px;
+}
+.harmony-video {
+    position: absolute;
+    left: 0px;
+    top: 260px;
+    z-index: -1;
+    -o-filter: blur(0.5px);
+    filter: blur(0.5px);
+    object-fit: cover;
+    transform: scale(1.04);
+}
+
+.text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    text-align: justify;
+}
+
+.video-header {
+    color: #000;
+}
+
+.video-para{
+    color: #000;
+}
+/* .showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+button.btn.btn-danger.video-button {
+    position: absolute;
+    top: 80%;
+    left: 114px;
 }
 
 /* media *********************************************************** */
@@ -528,7 +572,8 @@ a {
         transition: 0.6s;
         padding: 20px 100px;
         z-index: 100000;
-        background-color: #fff !important;
+        background-color: #E0E0E0 !important;
+        /* background: linear-gradient(45deg, #fff, #F5F5F5, #E0E0E0); */
         -webkit-box-shadow: 0 4px 6px -6px #222;
     }
     
@@ -874,6 +919,58 @@ a {
 
     a {
         color: black;
+    }
+
+    .sec-video{
+        position: relative;
+        height: 680px;
+    }
+    .harmony-video{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        /* width: inherit;
+        height: inherit; */
+        /* -o-filter: blur(2px);
+        filter: blur(2px);
+        object-fit: cover;
+        transform: scale(1.04); */
+    }
+
+    .text{
+        position: absolute;
+        left: 0;
+        top: 30%;
+        padding: 0 50% 0 60px;
+        text-shadow: 2px 2px #000;
+
+    }
+
+    .video-header{
+        color: #fff;
+        font-weight: 700;
+
+    }
+
+    .video-para{
+        color: #fff;
+    }
+    /* .showcase{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        min-height: 100vh;
+        padding:100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
+    button.btn.btn-danger.video-button {
+        position: absolute;
+        top: 60% !important;
+        left: 60px !important;
     }
   }
 
