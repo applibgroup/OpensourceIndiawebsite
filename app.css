@@ -9,7 +9,8 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 60px;
+    /* scroll-padding-top: 80px; */
+    scroll-padding-inline-end: 80px;
 }
 
 #nav-head{
@@ -166,12 +167,43 @@ h2.text-center {
     font-weight: 700;
 }
 
-h2.h2-header {
+h2.h2-header-library {
+    font-weight: 600;
+    text-align: center;
+    padding: 112px 0 0 0;
+    font-size: 1.7em;
+}
+
+h2.h2-header-community {
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 0 0 0;
+    font-size: 1.7em;
+}
+/* h2.h2-header {
     font-weight: 600;
     text-align: center;
     padding: 25px 0 0 0;
     font-size: 1.7em;
+} */
+
+h2.h2-header-contact {
+    font-weight: 600;
+    text-align: center;
+    padding: 100px 0 0 0;
+    font-size: 1.7em;
 }
+
+h2.video-header {
+    color: #000;
+    /* font-weight: 700; */
+    font-weight: 600;
+    text-align: center;
+    /* padding: 0px 0 0 48px; */
+    font-size: 1.7em;
+}
+
+
 
 h3.h3-header {
     text-align: center;
@@ -290,7 +322,7 @@ img.banner-img {
 
 img.community-img {
     width: 100%;
-    padding: 30px 0 0 0;
+    padding: 102px 0 0 0; 
 }
 
 
@@ -556,7 +588,7 @@ a.nav-link.active {
 button.btn.btn-danger.video-button {
     position: absolute;
     top: 80%;
-    left: 114px;
+    left:  132px;;
 }
 
 /* media *********************************************************** */
@@ -666,6 +698,19 @@ button.btn.btn-danger.video-button {
         width: 120px;
     }
 
+    h2.h2-header-community {
+        font-weight: 600;
+        text-align: inherit;
+        padding: 0px 0 0 48px;
+        font-size: 1.7em;
+    }
+
+    h2.h2-header-contact {
+        font-weight: 600;
+        text-align: center;
+        padding: 0 0 0 0;
+        font-size: 1.7em;
+    }
     h2.text-center {
         margin-bottom: 40px;
         font-weight: 700;
@@ -681,7 +726,14 @@ button.btn.btn-danger.video-button {
         margin-top: 10px;
     }
 
-    
+    h2.video-header {
+        color: #fff !important;
+        /* font-weight: 700; */
+        font-weight: 600 !important;
+        text-align: left !important;
+        /* padding: 0px 0 0 48px; */
+        font-size: 1.7em !important;
+    }
 
 
     .container.sec-1 {
@@ -702,13 +754,19 @@ button.btn.btn-danger.video-button {
         left: 50px;
     }
 
-
-    h2.h2-header {
+    h2.h2-header-library {
         font-weight: 700;
         text-align: left;
         padding: 0 50px;
         font-size: 2em;
     }
+/* 
+    h2.h2-header {
+        font-weight: 700;
+        text-align: left;
+        padding: 0 50px;
+        font-size: 2em;
+    } */
 
     h3.h3-header {
         text-align: left;
