@@ -62,7 +62,7 @@
       <div class="container sec-1" id="contest">
           <div class="row">
               <div class="col-sm-6">
-                <h2 class="h2-header">HarmonyOS Library</h2>
+                <h2 class="h2-header-library">HarmonyOS Library</h2>
                 <h3 class="h3-header">Development Contest</h3>
                 <div class="contest-para">
                     <p>Call for emerging developers to develop aplication libraries for HarmonyOS and get excited <span class="cash-prize-color">cash prizes/gifts</span> from the Application Library Engineering group </p>
@@ -86,7 +86,7 @@
               <img src="./img/Community.png" alt=""  class="community-img slideanim">
             </div>
             <div class="col-sm-6">
-              <h2 class="h2-header">About Our Community</h2>
+              <h2 class="h2-header-community">About Our Community</h2>
               <div class="contest-para">
                   <p>Application Library Engineering group is an open platform where developers of software application, libraries and components can come together and interact with an intent to learn, collaborate and contribute towards a fast-paced and enriched application development ecosystem for connected consumer devices.</p>
               </div> 
@@ -125,7 +125,7 @@
             <p class="video-para">HarmonyOs is a next-gen operating system that can run on a wide range of smart devices. It enables different smart devices to speak the same language, facilitating better connection and collabration, and bringing a simple, smooth, continuous, secure and reliable interaction experience in all senarios.</p>
           </div>
           <a href="https://consumer.huawei.com/en/harmonyos/" target="_blank"><button class="btn btn-danger video-button">READ MORE</button></a>   
-          <video src="./img/HarmonyOS-Overview_Normal.mp4" width="100%" class="harmony-video" muted loop autoplay></video>
+          <video src="./img/HarmonyOS-Overview.mp4" width="100%" class="harmony-video" muted loop autoplay></video>
           <!-- <iframe class="youtube-video harmony-video slideanim" src="https://www.youtube.com/embed/zx-45PxtU-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </iframe>
         </div>
@@ -153,7 +153,7 @@
       <div class="container sec-contact" id="contact">
         <div class="row">
            <div class="col-sm-6">
-             <h2 class="h2-header">Contact Us</h2>
+             <h2 class="h2-header-contact">Contact Us</h2>
              <div class="contest-para">
               <p>Feel free to contact us anytime.we will get back to you soon as we can!</p>
              </div>
@@ -251,8 +251,32 @@
          <p class="copy">&copy; 2021 Application Library Engineering Group</p>
         </div>
       </div>
-
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+      
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+      
       <script>
+
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyB3Lq2ZUw7Gk8x2YDhdFlnDsHJ_zguP1BQ",
+            authDomain: "osi-webpage.firebaseapp.com",
+            databaseURL: "https://osi-webpage-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "osi-webpage",
+            storageBucket: "osi-webpage.appspot.com",
+            messagingSenderId: "399263672110",
+            appId: "1:399263672110:web:60c54d694a8b2112667cbf",
+            measurementId: "G-H5L8XHW94M"
+          };
+
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+
+
+
         window.addEventListener('scroll', function(){
             let header = document.getElementById("nav-head");
             header.classList.toggle("sticky", window.scrollY > 0);
