@@ -591,6 +591,22 @@ button.btn.btn-danger.video-button {
     left:  132px;;
 }
 
+
+a {
+        
+    text-decoration: none !important;
+    
+}
+
+span.yt-video {
+    position: relative;
+    top: 332px !important;
+    left: 145px !important;
+    font-size: 50px;
+    color: #FF0000;
+}
+
+
 /* media *********************************************************** */
  @media screen and (min-width: 480px) {
     #nav-head{
@@ -618,7 +634,11 @@ button.btn.btn-danger.video-button {
         box-shadow: 0 4px 6px -6px #222;
         
     }
-    
+    a {
+        
+        text-decoration: none !important;
+        
+    }
 
 
     #nav-head.logo{
@@ -1030,6 +1050,36 @@ button.btn.btn-danger.video-button {
         top: 60% !important;
         left: 60px !important;
     }
+    span.yt-video {
+        position: relative;
+        top: 392px !important;
+        left: 230px !important;
+        font-size: 50px;
+        color: #FF0000;
+        /* transition: width 2s, height 4s; */
+        transition: all 0.3s ease-out;
+    }
+ 
+    /* .yt-video{
+        transition: width 2s, height 4s; 
+    }
+
+    .yt-video :hover{
+        width: 300px;
+        height: 300px;
+    } */
+ 
+    span.yt-video:hover{
+        /* transform: translate(5px, 0); */
+        color: rgb(145, 10, 10);
+        font-size: 60px;
+        
+    }
+
+    i#yt-video {
+        color: red;
+    }
+
   }
 
 
