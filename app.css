@@ -606,6 +606,9 @@ span.yt-video {
     color: #FF0000;
 }
 
+i#yt-video {
+    color: red;
+}
 
 /* media *********************************************************** */
  @media screen and (min-width: 480px) {
@@ -620,7 +623,7 @@ span.yt-video {
         transition: 0.6s;
         padding: 20px 100px;
         z-index: 100000;
-        background-color: #E0E0E0 !important;
+        background-color: #fff !important;
         /* background: linear-gradient(45deg, #fff, #F5F5F5, #E0E0E0); */
         -webkit-box-shadow: 0 4px 6px -6px #222;
     }
@@ -668,7 +671,7 @@ span.yt-video {
     }
 
     img.banner-image {
-        margin-top: 140px;
+         margin-top: 115px;
     }
 
     .mission-vision-sec{
@@ -758,7 +761,7 @@ span.yt-video {
 
     .container.sec-1 {
         background-color: #E8E8E8;
-        padding: 50px 20px;
+        padding: 50px 0px;
     }
 
     .contest-para {
@@ -797,7 +800,7 @@ span.yt-video {
     /* sec 2 */
 
     .container.sec-2 {
-        padding: 50px 20px;
+        padding: 50px 0px;
     }
 
     img.community-img {
@@ -1079,7 +1082,11 @@ span.yt-video {
     i#yt-video {
         color: red;
     }
-
+    
+    div#contact-sec {
+        padding: 0;
+        text-align: justify;
+    }
   }
 
 
