@@ -9,8 +9,9 @@
 }
 html{
     scroll-behavior: smooth;
-    /* scroll-padding-top: 80px; */
-    scroll-padding-inline-end: 80px;
+    /* scroll-padding-top: 70px; */
+    /* scroll-padding-inline-end: 150px; */
+    scroll-padding-block-start: 43px;
 }
 
 #nav-head{
@@ -170,7 +171,7 @@ h2.text-center {
 h2.h2-header-library {
     font-weight: 600;
     text-align: center;
-    padding: 112px 0 0 0;
+    padding: 80px 0 0 0;
     font-size: 1.7em;
 }
 
@@ -190,7 +191,7 @@ h2.h2-header-community {
 h2.h2-header-contact {
     font-weight: 600;
     text-align: center;
-    padding: 100px 0 0 0;
+    padding: 80px 0 0 0;
     font-size: 1.7em;
 }
 
@@ -322,7 +323,7 @@ img.banner-img {
 
 img.community-img {
     width: 100%;
-    padding: 102px 0 0 0; 
+    padding: 80px 0 0 0; 
 }
 
 
