@@ -986,9 +986,25 @@ i#yt-video {
         font-weight: 600;
     }
 
+    .wrapper .button:nth-child(7):hover .icon a{
+       
+        color: transparent;
+        background: #f65858;
+        -webkit-background-clip: text;
+        font-weight: 600;
+    }
+
+    .wrapper .button:nth-child(8):hover .icon a{
+       
+        color: transparent;
+        background: #000;
+        -webkit-background-clip: text;
+        font-weight: 600;
+    }
+
 
     .wrapper .button .icon i{
-        font-size: 25px;
+        font-size: 20px;
         line-height: 60px;
     }
 
