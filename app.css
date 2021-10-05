@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
     /* scroll-padding-top: 70px; */
     /* scroll-padding-inline-end: 150px; */
-    scroll-padding-block-start: 43px;
+    scroll-padding-block-start: 30px;
 }
 
 #nav-head{
